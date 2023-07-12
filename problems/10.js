@@ -7,7 +7,8 @@
  * @example "abcdef" -> "ABCdef"
 */
 function problem(str) {
-    return null;
+    let half = str.length / 2
+    return str.substr(0, half).toUpperCase() + str.substr(half).toLowerCase();
 }
 
 const tests = [
@@ -18,4 +19,4 @@ const tests = [
     ["UNiTeD STATes OF AMerICA", "UNITED STATEs of america"]
 ]
 
-module.exports = {problem, tests};
+module.exports = { problem, tests };

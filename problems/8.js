@@ -7,7 +7,10 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    let avg = numbers.reduce(function (result, number) {
+        return result + number;
+    }, 0)
+    return avg / numbers.length;
 }
 
 const tests = [
@@ -15,4 +18,4 @@ const tests = [
     [[2, 31, 4, 5, 2, 67], 18.5],
 ]
 
-module.exports = {problem, tests};
+module.exports = { problem, tests };

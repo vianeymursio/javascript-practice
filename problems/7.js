@@ -7,7 +7,9 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    return numbers.reduce(function (result, number) {
+        return result + number;
+    }, 0)
 }
 
 const tests = [
@@ -16,4 +18,4 @@ const tests = [
     [[], 0],
 ]
 
-module.exports = {problem, tests};
+module.exports = { problem, tests };
